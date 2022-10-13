@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar Css */
+nav {
+    background-color: black;
+    color: white;
+    height: 70px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Game Container CSS */
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #f9e8f5;
+}
+
+.gameInfo {
+    padding: 0px 34px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gameInfo h1{
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.imgBox img{
+    width: 0;
+    transition: 1s ease-in-out;
+}
+
+
+/* reset button css */
+#reset {
+    margin: 0 18px;
+    padding: 2px 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+}
+
+/* img box css */
+.imgBox {
+    width: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 40px;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 16vw);
+        grid-template-rows: repeat(3, 16vw);
+    }
+
+}
+
+
+
+
+
+
+
+/* Utility Classes for border */
+.bt-0 {
+    border-top: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
